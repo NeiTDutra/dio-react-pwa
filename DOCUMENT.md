@@ -15,6 +15,8 @@ $ npx create-react-app noticias-pwa
 ```
 ### Modificando arquivo manifest.json
 
+*manifest.json*
+
 ```json
 {
   "short_name": "PWA NEWS",//aqui
@@ -44,26 +46,31 @@ $ npx create-react-app noticias-pwa
 ```
 ### Modificando App.js
 
-Modificação do App.js para utilizar com rotas
+- Modificação do App.js para utilizar com rotas
+- Criando arquivo containers/Home.js 
+
+*App.js*
 
 ```javascript
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
 import './App.css';
-import { from } from 'pumpify';
+import Home from './containers/Home';
 
 function App() {
   return (
     <main>
       <section>
         <Router>
-          <Switch>
-            <Route path="/">
-              <div>
-                <h1>Post</h1>
-              </div>
-            </Route>
-          </Switch>
+          <div>
+            <Switch>
+              <Route path="/">
+                <div>
+                  <Home/>
+                </div>
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </section>
     </main>
@@ -71,5 +78,51 @@ function App() {
 }
 
 export default App;
+
 ```
+### Desenvolvendo api.js
+
+- Trata das requisições à api
+- Mais sobre a api [neste link](https://github.com/NeiTDutra/dio-react-pwa-api)
+
+*api.js*
+
+```javascript
+const params = {
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
+};
+
+const URL = 'http://localhost:3005/api';
+
+function getNews(subject) {
+    return (
+        fetch(`${URL}/${subject}`, params)
+        .then((response) => response.json())
+        .catch((err) => {
+            console.log('One error is ocurred', err);
+        })
+    );
+}
+
+function getNewsById(subject, id) {
+    return (
+        fetch(`${URL}/${subject}/${id}`, params)
+        .then((response) => response.json())
+        .catch((err) => {
+            console.log('One error is ocurred', err);
+        })
+    );
+}
+
+export default {
+    getNews,
+    getNewsById
+}
+```
+
+### Desenvolvendo o front end
+
 

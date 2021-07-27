@@ -14,7 +14,7 @@ function Home() {
     useEffect(() => {
         setLoading(true);
         Promise.allSettled([
-            Api.getNews('wlorld'),
+            Api.getNews('world'),
             Api.getNews('technology'),
             Api.getNews('economy')
         ])
