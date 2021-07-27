@@ -1,7 +1,26 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { Row, Col } from "antd";
+import Api from '../api';
 
 function Home() {
+
+    const [news, setNews] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    const handleNews = (articles) => {
+        console.log('ar', articles);
+    }
+
+    useEffect(() => {
+        setLoading(true);
+        Promise.allSettled([
+            Api.getNews('wlorld'),
+            Api.getNews('technology'),
+            Api.getNews('economy')
+        ])
+        .then(handleNews);
+    }, []);
+
     return (
         <div>
             <Row gutter={[16, 16]}>
