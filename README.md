@@ -6,4 +6,4 @@ Desenvolvendo uma aplicação PWA com React para listagem de notícias
 
 ## Desenvolvimento
 
-Detalhes de desenvolvimento [aqui]()
+Detalhes de desenvolvimento [aqui](https://github.com/NeiTDutra/dio-react-pwa/blob/master/DOCUMENT.md)
