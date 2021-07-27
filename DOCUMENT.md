@@ -42,4 +42,34 @@ $ npx create-react-app noticias-pwa
   "background_color": "#ffffff"
 }
 ```
+### Modificando App.js
+
+Modificação do App.js para utilizar com rotas
+
+```javascript
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import './App.css';
+import { from } from 'pumpify';
+
+function App() {
+  return (
+    <main>
+      <section>
+        <Router>
+          <Switch>
+            <Route path="/">
+              <div>
+                <h1>Post</h1>
+              </div>
+            </Route>
+          </Switch>
+        </Router>
+      </section>
+    </main>
+  );
+}
+
+export default App;
+```
 
