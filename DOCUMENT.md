@@ -128,4 +128,7 @@ export default {
 
 ### Desenvolvendo o front end
 
+Basicamente são dois arquivos:
 
+- [Home.js]()
+- [Post.js]()
