@@ -130,5 +130,7 @@ export default {
 
 Basicamente são dois arquivos:
 
-- [Home.js]()
-- [Post.js]()
+- [Home.js](https://github.com/NeiTDutra/dio-react-pwa/blob/master/HOME.md)
+- [Post.js](https://github.com/NeiTDutra/dio-react-pwa/blob/master/POST.md)
+
+:construction:
