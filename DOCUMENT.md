@@ -141,6 +141,6 @@ Basicamente são dois arquivos:
 
 [https://developers.google.com/web/fundamentals/primers/service-workers?hl=pt-br](https://developers.google.com/web/fundamentals/primers/service-workers?hl=pt-br)
 
-- [Arquivo sw.js deste projeto]()
+- [Arquivo sw.js deste projeto](https://github.com/NeiTDutra/dio-react-pwa/blob/master/SW.md)
 
 :construction:
