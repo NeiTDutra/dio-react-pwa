@@ -86,4 +86,5 @@ function Post() {
 
 export default memo(Post);
 ```
+
 [voltar](https://github.com/NeiTDutra/dio-react-pwa/blob/master/DOCUMENT.md)

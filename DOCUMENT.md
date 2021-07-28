@@ -133,4 +133,14 @@ Basicamente são dois arquivos:
 - [Home.js](https://github.com/NeiTDutra/dio-react-pwa/blob/master/HOME.md)
 - [Post.js](https://github.com/NeiTDutra/dio-react-pwa/blob/master/POST.md)
 
+### Desenvolvimento do service worker
+
+*"Um service worker é um script que seu navegador executa em segundo plano, separado da página da Web. Isso possibilita recursos que não precisam de uma página da Web ou de interação do usuário. Atualmente, eles já incluem recursos como notificações push e sincronização em segundo plano. No futuro, os service workers permitirão outras ações como sincronização periódica ou fronteira geográfica virtual. O principal recurso discutido neste tutorial é a capacidade de interceptar e gerenciar solicitações de rede, incluindo o gerenciamento programático de um cache de respostas.*
+
+*Essa API é muito interessante porque permite experiências off-line, oferecendo aos desenvolvedores controle total sobre a experiência."*
+
+[https://developers.google.com/web/fundamentals/primers/service-workers?hl=pt-br](https://developers.google.com/web/fundamentals/primers/service-workers?hl=pt-br)
+
+- [Arquivo sw.js deste projeto]()
+
 :construction:
